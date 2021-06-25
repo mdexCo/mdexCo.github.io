@@ -23,7 +23,7 @@ jobs:
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://github.com/mdexSwap/mdexSwap.github.io"
+          source_repo: "https://github.com/mdexSwap/mdexSwap.github.io@2.0"
           source_branch: "2.0"
           destination_branch: "2.0"
           github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}
