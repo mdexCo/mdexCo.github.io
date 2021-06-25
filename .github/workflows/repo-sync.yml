@@ -1,4 +1,4 @@
-#name: 同步
+name: 同步mdexSwap.github.io
 on:
   schedule:
     - cron: '* 1 * * *'
