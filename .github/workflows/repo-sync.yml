@@ -27,7 +27,7 @@ jobs:
       - name: branch -> 2.0
         uses: actions/checkout@v2
         with:
-          ref: 2.0    
+          ref: '2.0'    
       - name: rename CNAME
         run: |
           echo 'mdex.co' > ./CNAME
