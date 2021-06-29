@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           persist-credentials: false
-      - name: 开始🔄自动同步🔄
+      - name: 🔄 sync code 🔄
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
