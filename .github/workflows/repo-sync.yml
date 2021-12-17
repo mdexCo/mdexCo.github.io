@@ -24,10 +24,10 @@ jobs:
           source_branch: "2.0"
           destination_branch: "2.0"
           github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}
-      - name: branch -> 2.0
+      - name: branch -> Page
         uses: actions/checkout@v2
         with:
-          ref: '2.0'    
+          ref: page    
       - name: rename CNAME
         run: |
           echo 'mdex.co' > ./CNAME
@@ -35,4 +35,4 @@ jobs:
         uses: EndBug/add-and-commit@v7
         with:
           message: 'update CNAME' 
-          branch: '2.0'
+          branch: page
