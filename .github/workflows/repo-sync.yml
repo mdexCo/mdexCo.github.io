@@ -21,8 +21,8 @@ jobs:
         if: env.PAT
         with:
           source_repo: "https://github.com/mdexSwap/mdexSwap.github.io"
-          source_branch: "2.0"
-          destination_branch: "2.0"
+          source_branch: "main"
+          destination_branch: "page"
           github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}
       - name: branch -> Page
         uses: actions/checkout@v2
